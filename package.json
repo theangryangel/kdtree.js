@@ -1,0 +1,24 @@
+{
+	"name": "kdtree.js",
+	"version": "0.0.1",
+	"author": "the_angry_angel <karl@theangryangel.co.uk>",
+	"description": "A pure javascript KDTree implementation",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/theangryangel/kdtree.js"
+	},
+	"bugs": "https://github.com/theangryangel/kdtree.js/issues",
+	"main": "./kdtree.js",
+	"keywords": [
+		"kdtree",
+		"library"
+	],
+	"bundleDependencies": [
+	],
+	"license": "MIT",
+	"engine": {
+		"node": ">=0.6.0"
+	}
+}
+
+
