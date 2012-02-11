@@ -1,5 +1,8 @@
 "use strict";
 
+(function(exports)
+{
+
 var KDNode = function(point, left, right, axis, data)
 {
 	this.point = point;
@@ -181,21 +184,16 @@ KDTree.prototype.rebalance = function()
 	// TODO rebalance
 }
 
-var tree = new KDTree(3);
+exports.KDTree = KDTree;
+exports.KDNode = KDNode;
 
-var data = [
-	[0,0,0],
-	[10,10,10],
-	[0,9,8],
-	[1,9,12],
-	[100,100,100],
-	[200,200,200]
-];
+exports.create = function(dimensions, data)
+{
+	return new KDTree(dimensions, data);
+}
 
-tree.build(data);
 
-var results = tree.nearest([10,10,10], 1);
+}(typeof exports === "undefined"
+        ? (this.KDTree = {})
+        : exports));
 
-console.log('results');
-for (var i in results)
-	console.log(results[i].node.point + ' distance=%d', results[i].distance);
