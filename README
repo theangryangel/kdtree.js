@@ -1,0 +1,4 @@
+KDTree implementation in pure javascript.
+Not yet complete, probably buggy at this stage.
+
+If you want something higher performance you probably want to look at https://github.com/justinethier/node-kdtree
