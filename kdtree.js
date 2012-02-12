@@ -24,7 +24,7 @@ KDNode.prototype.genId = function()
 {
 	var id = '';
 
-	for (var i in this.point.length)
+	for (var i in this.point)
 		id += '-' + this.point[i];
 
 	return id.substr(1);
